@@ -12,7 +12,7 @@ int vowels(string name) {
 
 int reverse(int n) {
 
-    int reversedNumber = 0, remainder;// bruv
+    int reversedNumber = 0, remainder;
 
     while (n != 0) {
         remainder = n % 10;
