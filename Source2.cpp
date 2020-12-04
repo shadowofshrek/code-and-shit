@@ -5,7 +5,7 @@ using namespace std;
 int vowels(string name) {
     int count = 0;
     for (int i = 0; i < name.length(); i++)
-        if (name[i] == 'a' || name[i] == 'e' || name[i] == 'i' || name[i] == 'o' || name[i] == 'u')//this is for makeing the pin using the amount of vowels in the users name
+        if (name[i] == 'a' || name[i] == 'e' || name[i] == 'i' || name[i] == 'o' || name[i] == 'u')//this is for makeing the pin using the amount of vowels in the users name, i used this for help https://www.programiz.com/cpp-programming/examples/vowel-consonant-frequency-string 
             count++;
     return count;
 }
@@ -113,7 +113,7 @@ int main()// the start of the app
 
     while (i--) {
 
-        if (pin == pin && account == enrolement_number)
+        if (pin == pin && account == enrolement_number)// this checks if the pin and enrolment number are correct
             break;
 
         cout << "Error!\n";
@@ -138,7 +138,7 @@ int main()// the start of the app
     check = passwordcheck(password);
     while (check != 3) {
 
-        if (check == 0){
+        if (check == 0){// this is to make a strong enough password 
             cout << "Invalid password try again \n";
             
         }else if (check == 1){
@@ -161,7 +161,7 @@ int main()// the start of the app
     cout << "";
 
     ofstream file;
-    file.open("2FA_users.txt", ios::app);
+    file.open("2FA_users.txt", ios::app);// this puts all the users data in a file so you can open it and have a look at all the people that have made an account 
     file << account << " " << pin << " " << username << " " << password << endl;
     
     return 0;
