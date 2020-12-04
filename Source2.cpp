@@ -58,7 +58,17 @@ int passwordcheck(string pass) { //this is for the password strengh, i used "htt
 }
 int main()// the start of the app
 {
+
+    string name;
+    int enrolement_number, age;
     cout << "Welcome to USW Cyber App \n";
+    cout << "Enter full name: ";
+    cin >> name;
+    fflush(stdin);
+    cout << "Enter your Enrollment number: ";
+    cin >> enrolement_number;
+    cout << "Enter your age: ";
+    cin >> age;
     cout << "enter your date of birth \n";
     int day, month, year;
     cout << "day: ";
@@ -87,16 +97,6 @@ int main()// the start of the app
 
     cout << endl;
 
-    string name;
-    int enrolement_number, age;
-
-    cout << "Enter full name: ";
-    cin >> name;
-    fflush(stdin);
-    cout << "Enter your Enrollment number: ";
-    cin >> enrolement_number;
-    cout << "Enter your age: ";
-    cin >> age;
 
     int count = vowels(name);
     int reverse_age = reverse(age);
@@ -161,7 +161,7 @@ int main()// the start of the app
     cout << "";
 
     ofstream file;
-    file.open("2FA_users.txt", ios::app);// this puts all the users data in a file so you can open it and have a look at all the people that have made an account 
+    file.open("2FA_users.txt", ios::app);// this puts all the users data in a file so you can open it and have a look at all the people that have made an account
     file << account << " " << pin << " " << username << " " << password << endl;
     
     return 0;
