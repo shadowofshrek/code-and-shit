@@ -80,23 +80,9 @@ int main()// the start of the app
 
     day = dayofweek(day, month, year);
 
-    if (day == 0)
-        cout << "Sunday";
-    else if (day == 1)
-        cout << "Monday";
-    else if (day == 2)
-        cout << "Tusday";
-    else if (day == 3)
-        cout << "Wednesday";
-    else if (day == 4)
-        cout << "Thursday";
-    else if (day == 5)
-        cout << "Friday";
-    else
-        cout << "Saturday";
-
-    cout << endl;
-
+    string week[7] = {"Sunday","Monday","Tusday","Wednesday","Thursday","Friday","Saturday"}; 
+    cout << "you where born on ";
+    cout << week[day] << endl;
 
     int count = vowels(name);
     int reverse_age = reverse(age);
