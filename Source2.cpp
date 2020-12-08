@@ -65,7 +65,7 @@ int main()// the start of the app
     cout << "Enter full name: ";
     cin >> name;
     fflush(stdin);
-    cout << "Enter your Enrollment number: ";
+    cout << "Enter your Enrolment number: ";
     cin >> enrolement_number;
     cout << "Enter your age: ";
     cin >> age;
@@ -106,7 +106,7 @@ int main()// the start of the app
     printf("%04d\n", pin);
     
     int account, i = 3, check = 1;
-    cout << "Enter Enrollment number:";
+    cout << "Enter Enrolment number:";
     cin >> account;
     cout << "Enter pin:";
     cin >> pin;
@@ -117,7 +117,7 @@ int main()// the start of the app
             break;
 
         cout << "Error!\n";
-        cout << "Enter Enrollment number:";
+        cout << "Enter Enrolment number:";
         cin >> account;
         cout << "Enter pin:";
         cin >> pin;
