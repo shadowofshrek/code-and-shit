@@ -56,6 +56,22 @@ int passwordcheck(string pass) { //this is for the password strengh, i used "htt
         return 1;
 
 }
+int check(string message) {
+    int f = 0;
+    
+    while(1) {
+        cout << message;
+        cin >> f;
+        if(!cin.fail() && f > 0) {
+
+            return f;
+        }
+        cin.clear();
+        cin.ignore(); 
+        cout << "Must be a whole/postive number" << endl;
+    }
+}
+
 int main()// the start of the app
 {
 
@@ -71,12 +87,9 @@ int main()// the start of the app
     cin >> age;
     cout << "enter your date of birth \n";
     int day, month, year;
-    cout << "day: ";
-    cin >> day;
-    cout << "month: ";
-    cin >> month;
-    cout << "year: ";
-    cin >> year;
+    day = check("day: ");
+    month = check("month: ");
+    year = check("year: ");
 
     day = dayofweek(day, month, year);
 
