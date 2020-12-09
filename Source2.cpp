@@ -76,17 +76,15 @@ int main()// the start of the app
 {
 
     string name;
-    int enrolement_number, age;
+    int enrolement_number, age, day, month, year;
     cout << "Welcome to USW Cyber App \n";
     cout << "Enter full name: ";
     cin >> name;
     fflush(stdin);
     cout << "Enter your Enrolment number: ";
     cin >> enrolement_number;
-    cout << "Enter your age: ";
-    cin >> age;
+    age = check("enter your age: ");
     cout << "enter your date of birth \n";
-    int day, month, year;
     day = check("day: ");
     month = check("month: ");
     year = check("year: ");
